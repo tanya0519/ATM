@@ -1,3 +1,15 @@
+#user authentication
+correct_pin="0519" 
+attempts=3
+while attempts>0:
+    pin=input("Enter ATM pin: ")
+    if pin==correct_pin:
+        print("Login Successful\n")
+        break
+    else:
+        attempts-=1
+        print("Incorrect PAin")
+        
 # display menu
 def show_menu():
     print("ATM MENU")
